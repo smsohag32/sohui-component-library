@@ -16,6 +16,10 @@
    ],
    "author": "Your Name",
    "license": "MIT",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/smsohag32/sohui-component-library.git"
+   },
    "peerDependencies": {
       "react": "^17.0.0 || ^18.0.0",
       "react-dom": "^17.0.0 || ^18.0.0"
