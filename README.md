@@ -17,7 +17,7 @@
 To install the Sohui UI Component Library, run the following command:
 
 ```bash
-npm install sohui
+npm i sohui-component-library
 ```
 
 ## Example
@@ -44,6 +44,34 @@ function App() {
 }
 
 export default App;
+
+```
+
+```bash
+import React from 'react';
+import { Dropdown, Table } from 'my-ui-library';
+
+function App() {
+  const dropdownOptions = ['Option 1', 'Option 2', 'Option 3'];
+  const tableColumns = ['Name', 'Age', 'Occupation'];
+  const tableData = [
+    { Name: 'John Doe', Age: 28, Occupation: 'Developer' },
+    { Name: 'Jane Doe', Age: 32, Occupation: 'Designer' },
+    { Name: 'Sam Smith', Age: 24, Occupation: 'Product Manager' },
+  ];
+
+  return (
+    <div className="p-4">
+      <h1 className="text-xl font-bold mb-4">My App</h1>
+      <h2 className="text-lg font-semibold mb-2">Dropdown Example</h2>
+      <Dropdown options={dropdownOptions} label="Select an option" />
+      <h2 className="text-lg font-semibold mt-6 mb-2">Table Example</h2>
+      <Table columns={tableColumns} data={tableData} />
+    </div>
+  );
+}
+
+export default App
 
 ```
 
