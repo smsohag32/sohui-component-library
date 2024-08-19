@@ -9,8 +9,6 @@
 -  [Components](#components)
    -  [Dropdown](#dropdown)
    -  [Table](#table)
--  [Contributing](#contributing)
--  [License](#license)
 
 ## Installation
 
@@ -24,32 +22,7 @@ npm i sohui-component-library
 
 ```bash
 import React from 'react';
-import { Dropdown } from 'sohui';
-
-function App() {
-  const handleSelect = (option) => {
-    alert(`Selected: ${option}`);
-  };
-
-  return (
-    <div className="p-4">
-      <Dropdown
-        options={['Option 1', 'Option 2', 'Option 3']}
-        onSelect={handleSelect}
-        placeholder="Select an option"
-        className="w-64"
-      />
-    </div>
-  );
-}
-
-export default App;
-
-```
-
-```bash
-import React from 'react';
-import { Dropdown, Table } from 'my-ui-library';
+import { Dropdown, Table } from 'sohui-component-library';
 
 function App() {
   const dropdownOptions = ['Option 1', 'Option 2', 'Option 3'];
@@ -74,13 +47,3 @@ function App() {
 export default App
 
 ```
-
-### Key Points:
-
--  **Installation**: Instructions for installing the library.
--  **Usage**: How to import and use the components.
--  **Components**: Detailed information and code examples for `Dropdown` and `Table`.
--  **Contributing**: Guidelines for contributing to the project.
--  **License**: Licensing information.
-
-You can copy and paste this into your `README.md` file.
